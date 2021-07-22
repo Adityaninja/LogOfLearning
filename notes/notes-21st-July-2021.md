@@ -44,7 +44,7 @@ def _traverse(self, node, target, path):
 ```
 
 - Single traversal approach. The core of it is that even if you do not know the element you are returning
-  the lca, you know that the check left_result != None and right_result != None IS the LCA.
+  the lca, you know that the node which satisfies check left_result != None and right_result != None IS the LCA.
 
 ``` python
 def single_traversal(self, node, p, q):
