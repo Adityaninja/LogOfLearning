@@ -44,3 +44,9 @@ def partitionDisjoint(self, nums):
                 split_index = index
 
     return split_index + 1
+```
+Errors I made:
+       for index in range(lowest_index+1, len(nums)):
+  This was previously:  
+   for index, num in enumerate(nums[lowest_index+1:\]):
+   Which is wrong as the index here refers to the list specified whereas we want the indexes of the original array
